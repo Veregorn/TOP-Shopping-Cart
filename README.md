@@ -1,8 +1,9 @@
-# React + Vite
+# Shopping Cart
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a 2-pages shopping cart App (a home page and a shop page, which includes a shopping cart) coded in Javascript and React. Tests are created in Vitest.
 
-Currently, two official plugins are available:
+The idea is to practice with React Components, going trough TDD and proving myself I can implement React Routing and API calls.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The user can navigate between the pages with a navigation bar, which will be shown on both pages.
+
+Shop items are fetched from FakeStore API (https://fakestoreapi.com/)
