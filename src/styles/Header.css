@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'Open Sans 600 Normal';
+    src: url(../../public/fonts/open-sans-latin-600-normal.woff2);
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+    height: 56px;
+}
+
+#logo {
+    background-color: #000;
+    color: #fff;
+    width: fit-content;
+    padding: 0.5rem 1rem;
+    font-family: 'Open Sans 600 Normal', sans-serif;
+    font-size: 1.5rem;
+}
+
+#logo a {
+    color: #fff;
+    text-decoration: none;
+}

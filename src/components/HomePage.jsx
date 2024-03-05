@@ -1,10 +1,11 @@
 import '../styles/HomePage.css'
 import { Link } from 'react-router-dom'
+import Header from './Header.jsx'
 
 function HomePage() {
   return (
     <div className="HomePage">
-      <h1>Home Page</h1>
+      <Header />
     </div>
   );
 }
