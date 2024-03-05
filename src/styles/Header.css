@@ -6,11 +6,12 @@
 .header {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 1rem;
-    width: 100%;
+    padding: 1rem 0;
     height: 56px;
+    background-color: #fff;
+    width: 100%;
 }
 
 #logo {
@@ -19,7 +20,8 @@
     width: fit-content;
     padding: 0.5rem 1rem;
     font-family: 'Open Sans 600 Normal', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    letter-spacing: 0.5rem;
 }
 
 #logo a {
