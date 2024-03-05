@@ -1,5 +1,6 @@
 import '../styles/Header.css'
 import { Link } from 'react-router-dom'
+import CategoriesMenu from './CategoriesMenu';
 
 function Header() {
     return (
@@ -7,6 +8,7 @@ function Header() {
             <div id="logo">
                 <Link to="/">VEREGORN SHOPPING CART</Link>
             </div>
+            <CategoriesMenu />
         </div>
     );
 }
