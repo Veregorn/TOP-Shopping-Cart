@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest';
 import { render, screen } from '@testing-library/react';
 
-import App from '../components/App';
+import HomePage from '../components/HomePage.jsx';
 
 describe('something truthy and falsy', () => {
   it('true to be true', () => {
@@ -13,9 +13,9 @@ describe('something truthy and falsy', () => {
   });
 });
 
-describe('App', () => {
+describe('HomePage', () => {
   it('renders headline', () => {
-    render(<App title="React" />);
+    render(<HomePage title="React" />);
     
     screen.debug();
     // check if App component renders headline
