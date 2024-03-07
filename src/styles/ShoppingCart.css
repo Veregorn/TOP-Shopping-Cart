@@ -1,0 +1,21 @@
+.cartCount img {
+    width: 36px;
+    height: 36px;
+    transition: transform 0.3s ease;
+}
+
+.cartCount img:hover {
+    cursor: pointer;
+}
+
+.cartCount span {
+    position: relative;
+    top: -5px;
+    right: 28px;
+    color: #fff;
+    border-radius: 50%;
+    padding: 0.2rem 0.4rem;
+    font-size: 1rem;
+    font-weight: bold;
+    transform: translate(50%, -50%);
+}

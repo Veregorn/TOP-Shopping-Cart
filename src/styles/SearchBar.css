@@ -1,0 +1,14 @@
+.searchBar {
+    background: none;
+    border: none;
+    width: 36px;
+}
+
+.searchBar img {
+    width: 19px;
+    height: 19px;
+}
+
+.searchBar:hover {
+    cursor: pointer;
+}

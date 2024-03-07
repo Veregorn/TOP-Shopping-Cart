@@ -6,10 +6,10 @@
 .header {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 1rem 0;
-    height: 56px;
+    height: 30px;
     background-color: #fff;
     width: 100%;
 }
@@ -18,10 +18,11 @@
     background-color: #000;
     color: #fff;
     width: fit-content;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.8rem;
     font-family: 'Open Sans 600 Normal', sans-serif;
     font-size: 1.2rem;
-    letter-spacing: 0.5rem;
+    letter-spacing: 0.3rem;
+    margin-left: 2rem;
 }
 
 #logo a {
