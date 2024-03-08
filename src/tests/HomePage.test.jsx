@@ -1,23 +1,36 @@
 import { describe, it, expect } from 'vitest';
 import { render, screen } from '@testing-library/react';
+import { MemoryRouter } from 'react-router-dom';
 
 import HomePage from '../components/HomePage.jsx';
 
-describe('something truthy and falsy', () => {
-  it('true to be true', () => {
-    expect(true).toBe(true);
-  });
-
-  it('false to be false', () => {
-    expect(false).toBe(false);
-  });
-});
-
 describe('HomePage', () => {
-  it('renders headline', () => {
-    render(<HomePage title="React" />);
-    
-    screen.debug();
-    // check if App component renders headline
+  it('should render the HomePage component', () => {
+    render(
+      <MemoryRouter>
+        <HomePage />
+      </MemoryRouter>
+    );
+    expect(screen.getByText('NEW AROUND HERE')).toBeInTheDocument();
+  });
+
+  it('should render the Favorites component', async () => {
+    render(
+      <MemoryRouter>
+        <HomePage />
+      </MemoryRouter>
+    );
+    await screen.findByText('A few of our');
+    expect(screen.getByText('A few of our')).toBeInTheDocument();
+  });
+
+  it('should render the first four div classname products', async () => {
+    render(
+      <MemoryRouter>
+        <HomePage />
+      </MemoryRouter>
+    );
+    await screen.findByText('A few of our');
+    expect(screen.getAllByTestId('product').length).toBe(4);
   });
 });
