@@ -19,13 +19,13 @@
     width: 100%;
 }
 
-.left-side {
+.primaryCats .left-side {
     box-sizing: border-box;
     width: 50%;
     height: 100%;
 }
 
-.right-side {
+.primaryCats .right-side {
     background-color: #f6f0ea;
     display: flex;
     flex-direction: column;

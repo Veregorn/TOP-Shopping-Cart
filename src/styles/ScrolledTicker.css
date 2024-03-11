@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Orbitron 400 Normal';
+    src: url(../../public/fonts/orbitron-latin-400-normal.woff2);
+}
+
+.scrolledTicker {
+    width: 100%;
+    background-color: black;
+    padding: 1rem 0; /* Añade un poco de espacio alrededor del texto */
+    box-sizing: border-box; /* Añade el padding al ancho del contenedor */
+    overflow-x: hidden; /* Oculta el texto que desborde el contenedor */
+    min-height: 52px;
+}
+
+.scrolledTickerContent {
+    display: inline-block; /* Hace que el texto se desplace horizontalmente */
+    white-space: nowrap; /* Evita que el texto se desplace verticalmente */
+    text-align: left; /* Alineación a la izquierda para comenzar desde el principio */
+    overflow: hidden; /* Oculta el texto que desborde el contenedor */
+    box-sizing: border-box;
+}
+
+.scrolling-text {
+    font-family: 'Orbitron 400 Normal';
+    font-size: 0.8rem;
+    color: white;
+    text-transform: uppercase;
+    word-spacing: 0.5rem; /* Añade espacio entre las palabras */
+    letter-spacing: 0.1rem; /* Añade espacio entre las letras */
+    display: inline-block;
+    white-space: nowrap; /* Evita que el texto se pase a la siguiente línea */
+}
