@@ -17,7 +17,7 @@ function ScrolledTicker() {
         
             // Calcula el desplazamiento como una fracción del scroll vertical
             // Ajusta el divisor para controlar la "suavidad" y la distancia del desplazamiento
-            const newTranslateX = 70-(scrollY / (totalScrollHeight)) * 100; // 100 es un valor de ejemplo; ajusta según la longitud del contenido
+            const newTranslateX = 65 - (scrollY / (totalScrollHeight)) * 100; // 100 es un valor de ejemplo; ajusta según la longitud del contenido
         
             setTranslateX(newTranslateX);
         };

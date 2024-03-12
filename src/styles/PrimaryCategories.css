@@ -77,11 +77,12 @@
 .category {
     display: flex;
     flex-direction: row;
-    align-items: start;
+    align-items: center;
+    justify-content: start;
     height: 100%;
-    overflow: hidden;
     box-sizing: border-box;
     width: 50%;
+    cursor: pointer;
 }
 
 .category a {
@@ -90,27 +91,19 @@
     text-transform: uppercase;
     font-family: 'Open Sans 600 Normal', sans-serif;
     font-size: 1rem;
-    overflow: hidden;
-    padding-bottom: 0.5rem;
-    line-height: 1.5;
 }
 
 .category img {
-    width: 40px;
-    height: 40px;
-    position: relative;
-    right: 2rem;
-    object-fit: cover;
-    object-position: center;
-    box-sizing: border-box;
+    width: 20px;
+    height: 20px;
     padding: 10px;
-    margin-top: 1rem;
+    margin-left: 1rem;
     transform: translateX(-1rem);
     transition: transform 0.3s ease;
     cursor: pointer;
 }
 
 .category:hover img {
-    transform: translateX(1rem);
+    transform: translateX(0);
     transition: transform 0.3s ease;
 }
