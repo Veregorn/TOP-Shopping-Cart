@@ -1,0 +1,23 @@
+.stores {
+    display: flex;
+    flex-direction: row;
+}
+
+.stores .left-side, .stores .right-side {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.stores .left-side {
+    width: 35%;
+}
+
+.stores .right-side {
+    width: 65%;
+}
+
+.stores-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

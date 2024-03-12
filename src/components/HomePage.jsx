@@ -4,6 +4,7 @@ import Hero from './Hero.jsx'
 import Favorites from './Favorites.jsx'
 import PrimaryCategories from './PrimaryCategories.jsx'
 import ScrolledTicker from './ScrolledTicker.jsx'
+import Stores from './Stores.jsx'
 
 function HomePage() {
 
@@ -79,6 +80,7 @@ function HomePage() {
                 buttonText={tertiaryCategoriesButtonText}
             />
             <ScrolledTicker />
+            <Stores />
         </div>
   );
 }
