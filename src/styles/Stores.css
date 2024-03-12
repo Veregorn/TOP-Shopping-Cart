@@ -82,6 +82,8 @@
     background-color: #000;
     color: #fff;
     margin: 1rem;
+    width: 80%;
+    height: 3rem;
 }
 
 .store-details-link {
@@ -116,4 +118,9 @@
 .store-details-link:hover img {
     transform: translateX(0);
     transition: transform 0.3s ease;
+}
+
+.time-table {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
 }
