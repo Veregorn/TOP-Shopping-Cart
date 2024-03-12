@@ -6,6 +6,7 @@ import PrimaryCategories from './PrimaryCategories.jsx'
 import ScrolledTicker from './ScrolledTicker.jsx'
 import Stores from './Stores.jsx'
 import Promotion from './Promotion.jsx'
+import Footer from './Footer.jsx'
 
 function HomePage() {
 
@@ -83,6 +84,7 @@ function HomePage() {
             <ScrolledTicker />
             <Stores />
             <Promotion />
+            <Footer />
         </div>
   );
 }
