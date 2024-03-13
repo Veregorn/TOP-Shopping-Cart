@@ -22,7 +22,6 @@
 .primaryCats .left-side {
     box-sizing: border-box;
     width: 50%;
-    height: 100%;
 }
 
 .primaryCats .right-side {
@@ -35,7 +34,6 @@
     padding: 3rem;
     box-sizing: border-box;
     width: 50%;
-    height: 100%;
 }
 
 .primary-cats-img {

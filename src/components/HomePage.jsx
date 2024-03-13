@@ -1,12 +1,9 @@
 import '../styles/HomePage.css'
-import Header from './Header.jsx'
 import Hero from './Hero.jsx'
 import Favorites from './Favorites.jsx'
 import PrimaryCategories from './PrimaryCategories.jsx'
 import ScrolledTicker from './ScrolledTicker.jsx'
 import Stores from './Stores.jsx'
-import Promotion from './Promotion.jsx'
-import Footer from './Footer.jsx'
 
 function HomePage() {
 
@@ -29,20 +26,19 @@ function HomePage() {
     const secondaryCategoriesCaption = 'Unveiling the Elegance: A Timeless Collection of Exquisite Jewels that Radiate with Unmatched Brilliance and Craftsmanship.'
     const secondaryCategoriesImgSrc = '../../public/images/secondary-cat.webp'
     const secondaryCategoriesImgAlt = 'Secondary categories'
-    const secondaryCategoriesButtonLink = '/productList'
-    const secondaryCategoriesButtonText = 'SHOP JEWELLERY'
+    const secondaryCategoriesButtonLink = '/productList/jewelery'
+    const secondaryCategoriesButtonText = 'SHOP JEWELERY'
 
     const tertiaryCategoriesSubtitle = 'BEAUTY IN EVERY DETAIL'
     const tertiaryCategoriesTitle = 'Tech meets design'
     const tertiaryCategoriesCaption = 'Our products are designed to be the best. We use the latest technology and the best materials to make sure you have the best experience.'
     const tertiaryCategoriesImgSrc = '../../public/images/tertiary-cat.webp'
     const tertiaryCategoriesImgAlt = 'Tertiary categories'
-    const tertiaryCategoriesButtonLink = '/productList'
-    const tertiaryCategoriesButtonText = 'SHOP TECHNOLOGY'
+    const tertiaryCategoriesButtonLink = '/productList/electronics'
+    const tertiaryCategoriesButtonText = 'SHOP ELECTRONICS'
   
     return (
         <div className="homePage">
-            <Header />
             <Hero
                 imageAtLeft={true} 
                 imageSrc={newProductsImgSrc} 
@@ -59,7 +55,7 @@ function HomePage() {
                 title={primaryCategoriesTitle}
                 caption={primaryCategoriesCaption}
                 imageSrc={primaryCategoriesImgSrc}
-                imageAlt={primaryCategoriesImgAlt}
+                imageAlt={primaryCategoriesImgAlt} 
             />
             <Hero
                 imageAtLeft={false} 
@@ -83,8 +79,6 @@ function HomePage() {
             />
             <ScrolledTicker />
             <Stores />
-            <Promotion />
-            <Footer />
         </div>
   );
 }

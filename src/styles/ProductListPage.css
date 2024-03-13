@@ -1,0 +1,32 @@
+.ProductListPage {
+    display: flex;
+    flex-direction: column;
+}
+
+.subHeader {
+    width: 100%;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.subHeader h2 {
+    font-family: 'Open Sans 400 Normal', sans-serif;
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    color: #000;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+.products {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 4rem;
+    gap: 2rem;
+}

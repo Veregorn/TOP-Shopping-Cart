@@ -1,4 +1,5 @@
 import '../styles/Hero.css'
+import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types';
 
 function Hero({
@@ -19,7 +20,7 @@ function Hero({
                         <h2>{subtitle}</h2>
                         <h1>{title}</h1>
                         <p>{caption}</p>
-                        <button onClick={buttonLink}>{buttonText}</button>
+                        <Link to={buttonLink}>{buttonText}</Link>
                     </div>
                 }
             </div>
@@ -29,7 +30,7 @@ function Hero({
                         <h2>{subtitle}</h2>
                         <h1>{title}</h1>
                         <p>{caption}</p>
-                        <button onClick={buttonLink}>{buttonText}</button>
+                        <Link to={buttonLink}>{buttonText}</Link>
                     </div>
                 }
             </div>

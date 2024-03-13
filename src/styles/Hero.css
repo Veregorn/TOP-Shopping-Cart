@@ -17,7 +17,6 @@
 .left-side, .right-side {
     box-sizing: border-box;
     width: 50%;
-    height: 100%;
 }
 
 .hero-content {
@@ -59,7 +58,7 @@
     line-height: 1.5;
 }
 
-.hero button {
+.hero a {
     font-family: 'Open Sans 400 Normal', sans-serif;
     font-size: 1rem;
     padding: 1rem 2rem;
@@ -68,4 +67,5 @@
     color: #fff;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    text-decoration: none;
 }

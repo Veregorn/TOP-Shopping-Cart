@@ -15,7 +15,6 @@
 
 .stores .left-side, .stores .right-side {
     box-sizing: border-box;
-    height: 100%;
 }
 
 .stores .left-side {

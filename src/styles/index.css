@@ -48,5 +48,9 @@ table {
 	border-spacing: 0;
 }
 
-/* MY STYLES */
+/* Global Styles */
 
+#root {
+  display: flex;
+  flex-direction: column;
+}
