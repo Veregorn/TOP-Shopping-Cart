@@ -30,3 +30,7 @@
     padding: 2rem 4rem;
     gap: 2rem;
 }
+
+.product a {
+    text-decoration: none;
+}

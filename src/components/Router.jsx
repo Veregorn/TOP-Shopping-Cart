@@ -4,12 +4,20 @@ import HomePage from './HomePage.jsx'
 import ErrorPage from './ErrorPage.jsx'
 import ProductListPage from './ProductListPage.jsx'
 import ProductDetailsPage from './ProductDetailsPage.jsx'
+import { useState } from 'react'
 
 const Router = () => {
+
+    const [cart, setCart] = useState([])
+
+    const addToCart = (product) => {
+        setCart([...cart, product])
+    }
+
     const router = createBrowserRouter([
         {
             path: '/',
-            element: <Layout />,
+            element: <Layout numOfProductsInCart={cart.length} />,
             errorElement: <ErrorPage />,
             children: [
                 {
@@ -22,7 +30,7 @@ const Router = () => {
                 },
                 {
                     path: 'product/:productId',
-                    element: <ProductDetailsPage />
+                    element: <ProductDetailsPage addToCartHandler={addToCart} />
                 }
             ]
         }

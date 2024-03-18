@@ -3,16 +3,21 @@ import Header from './Header.jsx'
 import Footer from './Footer.jsx'
 import Promotion from './Promotion.jsx'
 import { Outlet } from 'react-router-dom'
+import propTypes from 'prop-types'
 
-function Layout() {
+function Layout({ numOfProductsInCart }) {
     return (
         <>
-            <Header />
+            <Header numOfProductsInCart={numOfProductsInCart} />
             <Outlet /> {/* Here is rendered the content depending on the route */}
             <Promotion />
             <Footer />
         </>
     );
+}
+
+Layout.propTypes = {
+    numOfProductsInCart: propTypes.number.isRequired
 }
 
 export default Layout;

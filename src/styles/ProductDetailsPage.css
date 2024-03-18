@@ -1,0 +1,112 @@
+@font-face {
+    font-family: 'Open Sans 400 Normal';
+    src: url(.../public/fonts/open-sans-latin-400-normal.woff2);
+}
+
+@font-face {
+    font-family: 'Open Sans 300 Normal';
+    src: url(.../public/fonts/open-sans-latin-300-normal.woff2);
+}
+
+.ProductDetailsPage {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.product-image-side {
+    width: 50%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.product-image-side img {
+    height: 300px;
+}
+
+.product-info-side {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 2rem;
+    height: 100%;
+    background-color: #fbf7f4;
+    min-height: 300px;
+}
+
+.product-info-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.product-info-botton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-bottom: 2rem;
+}
+
+.product-info-top-left {
+    width: 70%;
+    box-sizing: border-box;
+    padding-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.product-info-top-left h1 {
+    font-family: 'Open Sans 400 Normal', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.product-info-top-left h2 {
+    font-family: 'Open Sans 400 Normal', sans-serif;
+    font-size: 0.8rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+
+.product-info-top-right {
+    width: 30%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: end;
+    height: 100%;
+}
+
+.product-info-top-right p {
+    font-family: 'Open Sans 400 Normal', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+
+.product-info-bottom button {
+    font-family: 'Open Sans 400 Normal', sans-serif;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+.product-info-bottom p {
+    font-family: 'Open Sans 300 Normal', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}

@@ -1,6 +1,7 @@
 import '../styles/ProductListPage.css'
 import { useParams } from 'react-router-dom'
 import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 
 function ProductListPage() {
 
@@ -40,9 +41,11 @@ function ProductListPage() {
                 {error && <div>Error: {error.message}</div>}
                 {products.map((product) => (
                     <div key={product.id} className='product'>
-                        <img src={product.image} alt={product.title} />
-                        <h3>{product.title}</h3>
-                        <p>${product.price}</p>
+                        <Link to={`/product/${product.id}`}>
+                            <img src={product.image} alt={product.title} />
+                            <h3>{product.title}</h3>
+                            <p>${product.price}</p>
+                        </Link>
                     </div>
                 ))}
             </div>
