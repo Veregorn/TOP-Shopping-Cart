@@ -31,6 +31,13 @@
     gap: 2rem;
 }
 
+.products .product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between!important;
+}
+
 .product a {
     text-decoration: none;
 }

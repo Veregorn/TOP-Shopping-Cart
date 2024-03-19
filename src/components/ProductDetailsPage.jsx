@@ -46,7 +46,7 @@ function ProductDetailsPage({ addToCartHandler }) {
                             </div>
                         </div>
                         <div className='product-info-bottom'>
-                            <button onClick={() => addToCartHandler({productId})}>Add to cart ${product.price}</button>
+                            <button onClick={() => addToCartHandler(product.id)}>Add to cart ${product.price}</button>
                             <p>{product.description}</p>
                         </div>
                     </div>

@@ -1,5 +1,6 @@
 import '../styles/Favorites.css'
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function Favorites() {
     
@@ -34,11 +35,11 @@ function Favorites() {
             <h1>FAVORITES</h1>
             <div className="products">
                 {products.map((product) => (
-                    <div key={product.id} className="product" data-testid="product">
+                    <Link to={`/product/${product.id}`} key={product.id} className="product" data-testid="product">
                         <img src={product.image} alt={product.title} />
                         <h3>{product.title}</h3>
                         <p>${product.price}</p>
-                    </div>
+                    </Link>
                 ))}
             </div>
         </div>
