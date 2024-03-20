@@ -16,7 +16,7 @@ function CartPage({cart}) {
                                 <img src={product.image} alt={product.title} />
                                 <div className='quantity-control-container'>
                                     <button>-</button>
-                                    <p>1</p>
+                                    <p>{product.quantity}</p>
                                     <button>+</button>
                                 </div>
                             </div>
@@ -28,7 +28,7 @@ function CartPage({cart}) {
                                 <button>
                                     <img src='../../public/icons/cross.svg' alt='remove' />
                                 </button>
-                                <h3>${ensureTwoDecimalPlaces(product.price)}</h3>
+                                <h3>${ensureTwoDecimalPlaces(product.price * product.quantity)}</h3>
                             </div>
                         </div>
                     ))}
@@ -42,9 +42,9 @@ function CartPage({cart}) {
                             <h3 className='total'>Total:</h3>
                         </div>
                         <div className='right-resume'>
-                            <h3>${Object.values(cart).reduce((acc, product) => acc + product.price, 0)}</h3>
+                            <h3>${ensureTwoDecimalPlaces(Object.values(cart).reduce((acc, product) => acc + (product.price * product.quantity), 0))}</h3>
                             <h3>FREE</h3>
-                            <h3 className='total-bold'>${Object.values(cart).reduce((acc, product) => acc + product.price, 0)}</h3>
+                            <h3 className='total-bold'>${ensureTwoDecimalPlaces(Object.values(cart).reduce((acc, product) => acc + (product.price * product.quantity), 0))}</h3>
                         </div>
                     </div>
                     <button>Checkout</button>
