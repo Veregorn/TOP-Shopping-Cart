@@ -31,13 +31,15 @@
     gap: 2rem;
 }
 
-.products .product {
+.product a {
+    text-decoration: none;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between!important;
+    justify-content: space-between;
+    height: 100%;
 }
 
-.product a {
-    text-decoration: none;
+.product h3 {
+    flex: 1;
 }

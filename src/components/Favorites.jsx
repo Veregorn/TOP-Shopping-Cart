@@ -1,6 +1,7 @@
 import '../styles/Favorites.css'
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { ensureTwoDecimalPlaces } from '../utils';
 
 function Favorites() {
     
@@ -38,7 +39,7 @@ function Favorites() {
                     <Link to={`/product/${product.id}`} key={product.id} className="product" data-testid="product">
                         <img src={product.image} alt={product.title} />
                         <h3>{product.title}</h3>
-                        <p>${product.price}</p>
+                        <p>${ensureTwoDecimalPlaces(product.price)}</p>
                     </Link>
                 ))}
             </div>

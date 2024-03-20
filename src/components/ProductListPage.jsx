@@ -2,6 +2,7 @@ import '../styles/ProductListPage.css'
 import { useParams } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { ensureTwoDecimalPlaces } from '../utils';
 
 function ProductListPage() {
 
@@ -44,7 +45,7 @@ function ProductListPage() {
                         <Link to={`/product/${product.id}`}>
                             <img src={product.image} alt={product.title} />
                             <h3>{product.title}</h3>
-                            <p>${product.price}</p>
+                            <p>${ensureTwoDecimalPlaces(product.price)}</p>
                         </Link>
                     </div>
                 ))}

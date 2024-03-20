@@ -12,13 +12,17 @@ const Router = () => {
     const [cart, setCart] = useState({})
     const [numOfProductsInCart, setNumOfProductsInCart] = useState(0)
 
-    const addToCart = (productId) => {
+    const addToCart = (product) => {
         setCart((prevCart) => {
-            const newCart = { ...prevCart };
-            newCart[productId] = newCart[productId] ? newCart[productId] + 1 : 1;
-            return newCart;
-        });
-        setNumOfProductsInCart((prevNumOfProductsInCart) => prevNumOfProductsInCart + 1);
+            const newCart = { ...prevCart }
+            if (newCart[product.id] === undefined) {
+                newCart[product.id] = { ...product, quantity: 1 }
+            } else {
+                newCart[product.id].quantity++
+            }
+            return newCart
+        })
+        setNumOfProductsInCart((prevNum) => prevNum + 1)
     }
 
     const router = createBrowserRouter([

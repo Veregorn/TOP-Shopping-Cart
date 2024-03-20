@@ -2,6 +2,7 @@ import '../styles/ProductDetailsPage.css'
 import { useParams } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import PropTypes from 'prop-types'
+import { ensureTwoDecimalPlaces } from '../utils';
 
 function ProductDetailsPage({ addToCartHandler }) {
 
@@ -42,11 +43,11 @@ function ProductDetailsPage({ addToCartHandler }) {
                                 <h2>Category: {product.category}</h2>
                             </div>
                             <div className='product-info-top-right'>
-                                <p>${product.price}</p>
+                                <p>${ensureTwoDecimalPlaces(product.price)}</p>
                             </div>
                         </div>
                         <div className='product-info-bottom'>
-                            <button onClick={() => addToCartHandler(product.id)}>Add to cart ${product.price}</button>
+                            <button onClick={() => addToCartHandler(product)}>Add to cart ${product.price}</button>
                             <p>{product.description}</p>
                         </div>
                     </div>
