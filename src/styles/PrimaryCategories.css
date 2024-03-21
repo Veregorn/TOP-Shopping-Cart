@@ -105,3 +105,26 @@
     transform: translateX(0);
     transition: transform 0.3s ease;
 }
+
+@media screen and (max-width: 868px) {
+    .primaryCats {
+        flex-direction: column;
+    }
+
+    .primaryCats .left-side {
+        width: 100%;
+    }
+
+    .primaryCats .right-side {
+        width: 100%;
+    }
+
+    .categories {
+        flex-direction: column;
+    }
+
+    .category {
+        width: 100%;
+    }
+    
+}

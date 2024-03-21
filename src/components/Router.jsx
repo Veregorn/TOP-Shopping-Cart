@@ -13,16 +13,40 @@ const Router = () => {
     const [numOfProductsInCart, setNumOfProductsInCart] = useState(0)
 
     const addToCart = (product) => {
-        setCart((prevCart) => {
-            const newCart = { ...prevCart }
-            if (newCart[product.id] === undefined) {
-                newCart[product.id] = { ...product, quantity: 1 }
-            } else {
-                newCart[product.id].quantity++
-            }
-            return newCart
-        })
-        setNumOfProductsInCart((prevNum) => prevNum + 1)
+        const newCart = { ...cart }
+        if (newCart[product.id] === undefined) {
+            newCart[product.id] = { ...product, quantity: 1 }
+        } else {
+            newCart[product.id].quantity++
+        }
+        setCart(newCart)
+        setNumOfProductsInCart(numOfProductsInCart + 1)
+    }
+
+    const deleteFromCart = (productId) => {
+        const newCart = { ...cart }
+        const quantity = newCart[productId].quantity
+        delete newCart[productId]
+        setCart(newCart)
+        setNumOfProductsInCart(numOfProductsInCart - quantity)
+    }
+
+    const increaseQuantity = (productId) => {
+        const newCart = { ...cart }
+        newCart[productId].quantity++
+        setCart(newCart)
+        setNumOfProductsInCart(numOfProductsInCart + 1)
+    }
+
+    const decreaseQuantity = (productId) => {
+        const newCart = { ...cart }
+        if (newCart[productId].quantity === 1) {
+            delete newCart[productId]
+        } else {
+            newCart[productId].quantity--
+        }
+        setCart(newCart)
+        setNumOfProductsInCart(numOfProductsInCart - 1)
     }
 
     const router = createBrowserRouter([
@@ -45,7 +69,7 @@ const Router = () => {
                 },
                 {
                     path: 'cart',
-                    element: <CartPage cart={cart} />
+                    element: <CartPage cart={cart} minusAction={decreaseQuantity} plusAction={increaseQuantity} crossAction={deleteFromCart} />
                 }
             ]
         }

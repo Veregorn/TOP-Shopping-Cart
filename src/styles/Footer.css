@@ -110,3 +110,34 @@
 .github-icon:hover {
     transform: rotate(180deg);
 }
+
+@media screen and (max-width: 868px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        width: 100%;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .footer-content h3 {
+        text-align: center;
+    }
+
+    .footer-content input {
+        width: 80%;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}

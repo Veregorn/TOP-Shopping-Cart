@@ -174,7 +174,7 @@
     border: none;
     cursor: pointer;
     width: 100%;
-    margin-top: 3rem;
+    margin: 3rem 0;
 }
 
 .resume p {
@@ -215,4 +215,9 @@
     display: flex;
     flex-direction: column;
     align-items: end;
+}
+
+.empty-cart {
+    font-family: 'Open Sans 400 Normal', sans-serif;
+    font-size: 1rem;
 }

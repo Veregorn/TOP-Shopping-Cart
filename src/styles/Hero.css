@@ -69,3 +69,35 @@
     transition: background-color 0.3s ease;
     text-decoration: none;
 }
+
+@media screen and (max-width: 868px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .left-side, .right-side {
+        width: 100%;
+    }
+
+    .hero-content {
+        padding: 1rem 1rem 2rem 1rem;
+        align-items: center;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero h2 {
+        font-size: 0.8rem;
+    }
+
+    .hero p {
+        font-size: 0.8rem;
+    }
+
+    .hero a {
+        font-size: 0.8rem;
+    }
+    
+}
