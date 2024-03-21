@@ -22,9 +22,3 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-
-# Config files
-*.config.js
-package-lock.json
-package.json
-.eslintrc.cjs
