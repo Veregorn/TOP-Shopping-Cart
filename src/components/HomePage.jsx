@@ -7,7 +7,7 @@ import Stores from './Stores.jsx'
 
 function HomePage() {
 
-    const newProductsImgSrc = '../../public/images/new-products-hero.webp'
+    // const newProductsImgSrc = '../../public/images/new-products-hero.webp'
     const newProductsImgAlt = 'New products'
     const newProductsTitle = 'NEW AROUND HERE'
     const newProductsSubtitle = ''
@@ -41,7 +41,7 @@ function HomePage() {
         <div className="homePage">
             <Hero
                 imageAtLeft={true} 
-                imageSrc={newProductsImgSrc} 
+                // imageSrc={newProductsImgSrc} 
                 imageAlt={newProductsImgAlt} 
                 title={newProductsTitle} 
                 subtitle={newProductsSubtitle} 

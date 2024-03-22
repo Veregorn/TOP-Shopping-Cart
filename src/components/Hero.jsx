@@ -1,10 +1,11 @@
 import '../styles/Hero.css'
 import { Link } from 'react-router-dom'
-import PropTypes from 'prop-types';
+import PropTypes from 'prop-types'
+import newProductsImg from '../../public/images/new-products-hero.webp'
 
 function Hero({
     imageAtLeft,
-    imageSrc,
+    // imageSrc,
     imageAlt,
     title,
     subtitle,
@@ -15,7 +16,7 @@ function Hero({
     return (
         <div className="hero">
             <div className='left-side'>
-                {imageAtLeft ? <img className='hero-img' src={imageSrc} alt={imageAlt} /> : 
+                {imageAtLeft ? <img className='hero-img' src={newProductsImg} alt={imageAlt} /> : 
                     <div className='hero-content'>
                         <h2>{subtitle}</h2>
                         <h1>{title}</h1>
@@ -25,7 +26,7 @@ function Hero({
                 }
             </div>
             <div className='right-side'>
-                {!imageAtLeft ? <img className='hero-img' src={imageSrc} alt={imageAlt} /> :
+                {!imageAtLeft ? <img className='hero-img' src={newProductsImg} alt={imageAlt} /> :
                     <div className='hero-content'>
                         <h2>{subtitle}</h2>
                         <h1>{title}</h1>
