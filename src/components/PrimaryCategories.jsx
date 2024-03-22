@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import primaryCategoriesImg from '../../public/images/primary-cats-img.webp'
+import rightArrow from '../../public/icons/right-arrow.svg'
 
 function PrimaryCategories({
     subtitle,
@@ -49,7 +50,7 @@ function PrimaryCategories({
                         (index == 2 || index == 3) &&
                             <div key={index} className="category">
                                 <Link to={`productList/${category}`}>{category}</Link>
-                                <img src="../../public/icons/right-arrow.svg" alt="Right Arrow" />
+                                <img src={rightArrow} alt="Right Arrow" />
                             </div>
                     ))}
                 </div>

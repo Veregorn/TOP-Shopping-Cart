@@ -6,6 +6,7 @@ import chicagoImg from '../../public/images/chicago-store.jpg'
 import londonImg from '../../public/images/london-store.jpg'
 import losAngelesImg from '../../public/images/los-angeles-store.jpg'
 import newYorkImg from '../../public/images/new-york-store.jpg'
+import rightArrow from '../../public/icons/right-arrow.svg'
 
 function Stores() {
 
@@ -37,7 +38,7 @@ function Stores() {
                 </div>
                 <div className='store-details-link'>
                     <Link to='/storeDetails'>See store details</Link>
-                    <img src="../../public/icons/right-arrow.svg" alt="Right Arrow" />
+                    <img src={rightArrow} alt="Right Arrow" />
                 </div>
             </div>
             <div className='right-side'>
