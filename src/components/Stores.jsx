@@ -1,6 +1,11 @@
 import '../styles/Stores.css'
 import { Link } from 'react-router-dom'
 import { useState } from 'react';
+import bostonImg from '../../public/images/boston-store.webp'
+import chicagoImg from '../../public/images/chicago-store.jpg'
+import londonImg from '../../public/images/london-store.jpg'
+import losAngelesImg from '../../public/images/los-angeles-store.jpg'
+import newYorkImg from '../../public/images/new-york-store.jpg'
 
 function Stores() {
 
@@ -8,20 +13,6 @@ function Stores() {
 
     const handleSelectedStore = (event) => {
         setStore(event.target.value);
-    }
-
-    let source = '../../public/images/boston-store.webp';
-
-    if (store == 'Boston') {
-        source = '../../public/images/boston-store.webp';
-    } else if (store == 'Chicago') {
-        source = '../../public/images/chicago-store.jpg';
-    } else if (store == 'London') {
-        source = '../../public/images/london-store.jpg';
-    } else if (store == 'Los Angeles') {
-        source = '../../public/images/los-angeles-store.jpg';
-    } else if (store == 'New York City') {
-        source = '../../public/images/new-york-store.jpg';
     }
 
     return (
@@ -50,7 +41,7 @@ function Stores() {
                 </div>
             </div>
             <div className='right-side'>
-                <img className='stores-img' src={source} alt="Stores" />
+                <img className='stores-img' src={store == 'Boston' && bostonImg || store == 'Chicago' && chicagoImg  || store == 'London' && londonImg || store == 'Los Angeles' && losAngelesImg || store == 'New York City' && newYorkImg} alt="Stores" />
             </div>
         </div>
     );

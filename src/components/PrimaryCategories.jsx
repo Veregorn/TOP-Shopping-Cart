@@ -2,12 +2,12 @@ import '../styles/PrimaryCategories.css'
 import { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+import primaryCategoriesImg from '../../public/images/primary-cats-img.webp'
 
 function PrimaryCategories({
     subtitle,
     title,
     caption,
-    imageSrc,
     imageAlt
 }) {
     const [categories, setCategories] = useState([]);
@@ -38,7 +38,7 @@ function PrimaryCategories({
     return (
         <div className="primaryCats">
             <div className='left-side'>
-                <img className='primary-cats-img' src={imageSrc} alt={imageAlt} />
+                <img className='primary-cats-img' src={primaryCategoriesImg} alt={imageAlt} />
             </div>
             <div className='right-side'>
                 <h2>{subtitle}</h2>
